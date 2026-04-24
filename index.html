@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PlugAI — экосистема AI-проектов. Исследования, инструменты и продукты на базе искусственного интеллекта." />
+  <meta name="theme-color" content="#0a0a0f" />
+  <meta property="og:title" content="PlugAI — экосистема AI-проектов" />
+  <meta property="og:description" content="Исследования, инструменты и продукты на базе искусственного интеллекта." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://plugai.ru" />
+  <title>PlugAI — экосистема AI-проектов</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="logo" aria-label="PlugAI">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28">
+            <defs>
+              <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7c5cff" />
+                <stop offset="100%" stop-color="#22d3ee" />
+              </linearGradient>
+            </defs>
+            <path d="M8 10 L8 22 M14 10 L14 22 M8 16 L18 16 M18 10 L22 10 A4 4 0 0 1 22 22 L18 22 Z" fill="none" stroke="url(#lg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+        <span class="logo-text">Plug<span class="accent">AI</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Главная навигация">
+        <a href="#projects">Проекты</a>
+        <a href="#ecosystem">Экосистема</a>
+        <a href="#about">О проекте</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <span class="eyebrow">
+          <span class="dot"></span>
+          Экосистема AI-проектов
+        </span>
+        <h1 class="hero-title">
+          Собираю инструменты<br />
+          и&nbsp;продукты на&nbsp;базе <span class="gradient-text">искусственного интеллекта</span>
+        </h1>
+        <p class="hero-sub">
+          PlugAI — пространство, где живут мои AI-проекты. Независимые сегодня,
+          единая экосистема завтра.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">Смотреть проекты</a>
+          <a href="#contact" class="btn btn-ghost">Связаться</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num" data-count="4">0</div>
+            <div class="stat-label">проектов</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num" data-count="1">0</div>
+            <div class="stat-label">экосистема</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">идей впереди</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">01 — projects</span>
+          <h2>Проекты</h2>
+          <p class="section-sub">Каждый проект решает конкретную задачу. Со временем они объединяются в единую систему.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card" data-status="live">
+            <div class="project-card-top">
+              <div class="project-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5Z"/>
+                  <path d="M5 10a7 7 0 0 0 14 0"/>
+                  <path d="M12 17v5"/>
+                  <path d="M8 22h8"/>
+                </svg>
+              </div>
+              <span class="badge badge-live">в работе</span>
+            </div>
+            <h3>Проект #1</h3>
+            <p>Краткое описание проекта. Расскажи, какую задачу он решает и для кого.</p>
+            <div class="project-tags">
+              <span>AI</span>
+              <span>LLM</span>
+              <span>API</span>
+            </div>
+            <a href="#" class="project-link">Подробнее →</a>
+          </article>
+
+          <article class="project-card" data-status="live">
+            <div class="project-card-top">
+              <div class="project-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
+                </svg>
+              </div>
+              <span class="badge badge-live">в работе</span>
+            </div>
+            <h3>Проект #2</h3>
+            <p>Краткое описание проекта. Добавь ссылку, скриншоты или демо.</p>
+            <div class="project-tags">
+              <span>Chatbot</span>
+              <span>NLP</span>
+            </div>
+            <a href="#" class="project-link">Подробнее →</a>
+          </article>
+
+          <article class="project-card" data-status="beta">
+            <div class="project-card-top">
+              <div class="project-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"/>
+                </svg>
+              </div>
+              <span class="badge badge-beta">beta</span>
+            </div>
+            <h3>Проект #3</h3>
+            <p>Экспериментальный проект. Пока доступен ограниченному кругу.</p>
+            <div class="project-tags">
+              <span>Computer Vision</span>
+              <span>ML</span>
+            </div>
+            <a href="#" class="project-link">Подробнее →</a>
+          </article>
+
+          <article class="project-card" data-status="soon">
+            <div class="project-card-top">
+              <div class="project-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
+                </svg>
+              </div>
+              <span class="badge badge-soon">скоро</span>
+            </div>
+            <h3>Проект #4</h3>
+            <p>Что-то новое уже в&nbsp;разработке. Следите за&nbsp;обновлениями.</p>
+            <div class="project-tags">
+              <span>AI Agents</span>
+              <span>Automation</span>
+            </div>
+            <a href="#" class="project-link muted">В&nbsp;разработке</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="ecosystem" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">02 — ecosystem</span>
+          <h2>Единая экосистема</h2>
+          <p class="section-sub">Цель — собрать проекты в&nbsp;одну систему, где данные, модели и&nbsp;интерфейсы работают вместе.</p>
+        </div>
+
+        <div class="ecosystem-grid">
+          <div class="eco-card">
+            <div class="eco-num">01</div>
+            <h3>Единый аккаунт</h3>
+            <p>Один вход для всех инструментов PlugAI.</p>
+          </div>
+          <div class="eco-card">
+            <div class="eco-num">02</div>
+            <h3>Общие модели</h3>
+            <p>Переиспользуемые AI-модели и&nbsp;API между проектами.</p>
+          </div>
+          <div class="eco-card">
+            <div class="eco-num">03</div>
+            <h3>Интеграции</h3>
+            <p>Проекты обмениваются данными и&nbsp;дополняют друг друга.</p>
+          </div>
+          <div class="eco-card">
+            <div class="eco-num">04</div>
+            <h3>Открытость</h3>
+            <p>Документация, API и&nbsp;примеры — для разработчиков и&nbsp;энтузиастов.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <span class="section-tag">03 — about</span>
+          <h2>О&nbsp;проекте</h2>
+          <p class="about-text">
+            <strong>PlugAI</strong> — это моё пространство для AI-проектов. Я&nbsp;исследую возможности
+            современных моделей и&nbsp;превращаю идеи в&nbsp;рабочие продукты.
+          </p>
+          <p class="about-text">
+            Сейчас каждый проект живёт отдельно. В&nbsp;будущем — планирую соединить их
+            в&nbsp;единую экосистему, где инструменты усиливают друг друга.
+          </p>
+          <div class="about-chips">
+            <span class="chip">LLM</span>
+            <span class="chip">AI Agents</span>
+            <span class="chip">RAG</span>
+            <span class="chip">Computer Vision</span>
+            <span class="chip">Automation</span>
+            <span class="chip">Research</span>
+          </div>
+        </div>
+        <div class="about-visual" aria-hidden="true">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+          <div class="grid-lines"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container contact-inner">
+        <span class="section-tag">04 — contact</span>
+        <h2>Связаться</h2>
+        <p class="section-sub">Есть идея, предложение или хочешь попробовать проект первым? Напиши.</p>
+        <div class="contact-actions">
+          <a href="mailto:hello@plugai.ru" class="btn btn-primary">hello@plugai.ru</a>
+          <a href="https://t.me/plugai" class="btn btn-ghost" target="_blank" rel="noopener">Telegram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-text">Plug<span class="accent">AI</span></span>
+        <span class="footer-tag">плюс AI в&nbsp;каждую идею</span>
+      </div>
+      <div class="footer-meta">
+        <span>© <span id="year">2026</span> PlugAI</span>
+        <span class="sep">·</span>
+        <a href="mailto:hello@plugai.ru">hello@plugai.ru</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
